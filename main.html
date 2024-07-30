@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('monyet.jpg') no-repeat center center fixed; 
+            background-size: 120%; /* Menyesuaikan ukuran gambar dengan layar */
+        }
+        .main-container {
+            text-align: center;
+            color: #000000; /* Warna teks putih agar terlihat kontras dengan latar belakang */
+            padding: 20px;
+            font-family: 'Verdana', sans-serif; /* Mengatur font untuk container utama */
+        }
+    </style>
+</head>   
+<body>
+    <div class="main-container">
+        <h1>Sodaraku!</h1>
+        <p>Lagi pengen ngopi nih, ada kah 100.000?</p>
+    </div>
+    <audio id="mainSound" src="sound pinjam dulu 100.mp3"></audio> <!-- Elemen audio untuk halaman utama -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainSound = document.getElementById('mainSound');
+            mainSound.play(); // Memutar suara ketika halaman dimuat
+        });
+    </script>
+</body>
+</html>
