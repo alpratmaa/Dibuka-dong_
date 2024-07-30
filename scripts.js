@@ -1,6 +1,7 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const audio = document.getElementById('backgroundAudio');
-    audio.play().catch(error => {
-        console.error('Autoplay was prevented:', error);
+document.addEventListener('DOMContentLoaded', () => {
+    const enterButton = document.getElementById('enterButton');
+    
+    enterButton.addEventListener('click', () => {
+        window.location.href = 'main.html'; // Mengarahkan ke halaman utama
     });
 });
